@@ -54,7 +54,7 @@ nav a {
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.6)
         ),
-        url("images/cover.png");
+        url("cover.png");
 
     background-size: cover;
     background-position: center;

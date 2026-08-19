@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background: #e8dcc2;
+    color: #3b2f2f;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #5c4033;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Cover */
+
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("images/cover.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-box {
+    max-width: 800px;
+    padding: 50px;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    color: white;
+
+    border-radius: 30px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    color: white;
+
+    font-size: 85px;
+
+    font-weight: 900;
+
+    letter-spacing: 6px;
+
+    text-transform: uppercase;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+
+.hero-text {
+    color: white;
+
+    font-size: 24px;
+
+    margin-bottom: 35px;
+}
+
+.hero a {
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background: white;
+
+    color: #5c4033;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+}
+
+/* Storybook pages */
+
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 48px;
+
+    margin-bottom: 40px;
+}
+
+.card,
+.scene {
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    padding: 40px;
+
+    background: #fffaf0;
+
+    border: 8px solid #d2b48c;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card,
+.scene,
+.reverse {
+    display: block;
+}
+
+.card img,
+.scene img {
+    width: 100%;
+
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+}
+
+.scene h3 {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+}
+
+.card p,
+.scene p {
+    text-align: justify;
+
+    font-size: 20px;
+
+    line-height: 2;
+}
+
+/* Ending */
+
+.ending {
+    background: #5c4033;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 100px 15%;
+}
+
+.ending p {
+    line-height: 2;
+
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+    background: #3b2f2f;
+
+    color: white;
+
+    padding: 30px;
+
+    display: flex;
+
+    justify-content: space-around;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+}
